@@ -47,30 +47,6 @@ margin-top: 30px;
   
 }
 
-.card2{
- 
-    margin-top: 10px;
-    border: 1.5px solid rgb(255, 0, 0);
-    height: 55vh;
-    width: 20%;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px grey;
-    margin: auto;
-  
-}
-.card3{
- 
-    margin-top: 10px;
-    border: 1.5px solid rgb(255, 0, 0);
-    height: 55vh;
-    width: 20%;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px grey;
-    margin: auto;
-  
-}
 .lower-top{
 width: 85%;
 height: 15%;
@@ -131,7 +107,7 @@ label{
 
         position: absolute;
  top:20%;
-        width: 100%;
+        width: 80%;
         height: 70vh;
         margin: auto;
     }
