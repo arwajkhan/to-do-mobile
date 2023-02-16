@@ -1,7 +1,4 @@
-
-
-
-.upper-container{
+.upper-container {
     font-family: Arial, Helvetica, sans-serif;
     width: 90%;
     height: 50px;
@@ -18,24 +15,24 @@ span#tasks {
     font-size: 2rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-right: 10%;
-position: absolute;
+    right: 10%;
+    position: absolute;
 
 }
 
-.lower{
+.lower {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-width: 85%;
-height: 300px;
-position: relative;
-margin-top: 30px;
+    width: 85%;
+    height: 300px;
+    position: relative;
+    margin-top: 30px;
 
 }
 
-.card1{
- 
+.card1 {
+
     margin-top: 10px;
     border: 1.5px solid rgb(255, 0, 0);
     height: 55vh;
@@ -44,72 +41,130 @@ margin-top: 30px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px grey;
     margin: auto;
-  
+
 }
 
-.lower-top{
-width: 85%;
-height: 15%;
-position: absolute;
-right: 0%;
-font-size: 30px;
-border-bottom: 1px solid rgb(0, 0, 0);
-color: red;
-text-align: left;
+.lower-top {
+    width: 85%;
+    height: 15%;
+    position: absolute;
+    right: 0%;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: red;
+    text-align: left;
 }
 
 
-.lower-middle{
+.lower-middle {
     top: 25%;
     width: 85%;
     height: 15%;
     position: absolute;
-   left: 17%;
+    left: 17%;
     font-size: 20px;
 
     color: rgb(255, 0, 0);
-    text-align:left;
+    text-align: left;
     text-decoration: line-through;
 }
-.lower-bottom{
-position: absolute;
-top: 40%;
-left: 9%;
+
+.lower-bottom {
+    position: absolute;
+    top: 40%;
+    left: 9%;
 }
 
-label{
+label {
     font-size: 20px;
 }
-.lower-b{
+
+.lower-b {
     position: absolute;
     right: 5%;
     bottom: 5%;
 }
 
-@media (max-width:600px){
-.upper-container{
-    margin-top: 30px;
-    width: 80vw;
-  
-}
-#list{
-    font-size: 25px;
+.popup {
+    visibility: hidden;
 }
 
-    .lower{
+
+@media (max-width:600px) {
+    .not-show {
+        filter: blur(3px);
+        -webkit-filter: blur(4px);
+    }
+
+    .upper-container {
+        margin-top: 30px;
+        width: 80vw;
+
+    }
+
+    #list {
+        font-size: 25px;
+    }
+
+    .lower {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         align-content: center;
     }
-    .card1{
+
+    .card1 {
 
         position: absolute;
- top:20%;
+        top: 20%;
         width: 80%;
         height: 55vh;
         margin: auto;
     }
+
+    .popup {
+        visibility: visible;
+        position: absolute;
+        height: 36vh;
+        width: 68%;
+        border: 1.5px solid rgb(142, 0, 0);
+        border-radius: 10px;
+        left: 16%;
+        top: 30%;
+        color: red;
+        font-size: 18px;
+    }
+
+    #add-new {
+        text-align: center;
+        text-decoration: dashed;
+     
+    }
+
+  .popupbar{
+
+    width: 85%;
+    height: 27%;
+    left: 8%;
+    box-shadow: 1px 1px 3px grey;
+   position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
   
+    }
+
+    .popupbtn {
+        display: block;
+        border-radius: 13px;
+   
+        margin: 6 auto;
+        border: 1px solid red;
+        padding: 5px 15px;
+        background-color: red;
+        color: white;
+    }
 }
